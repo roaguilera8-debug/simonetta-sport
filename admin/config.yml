@@ -5,7 +5,7 @@
 # ==========================================================
 backend:
   name: github
-  repo: TU-USUARIO/simonetta-sport
+  repo: roaguilera8-debug/simonetta-sport
   branch: main
 
 locale: es
