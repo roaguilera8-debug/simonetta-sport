@@ -1,0 +1,1 @@
+Acá se guardan automáticamente las fotos que subas desde el panel (tu-web/admin).

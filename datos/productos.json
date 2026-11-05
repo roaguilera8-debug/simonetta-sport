@@ -1,0 +1,167 @@
+{
+  "productos": [
+    {
+      "nombre": "Conjunto Nube",
+      "categoria": "Conjuntos",
+      "precio": 42000,
+      "nuevo": true,
+      "visible": true,
+      "descripcion": "Top deportivo con soporte medio y calza tiro alto. Tela suplex con lycra, no transparenta.",
+      "talles": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "agotados": [
+        "XL"
+      ],
+      "colores": [
+        {
+          "nombre": "Rosa empolvado",
+          "hex": "#C8A49F"
+        },
+        {
+          "nombre": "Bordó",
+          "hex": "#4D0E13"
+        }
+      ],
+      "fotos": [],
+      "medidas": ""
+    },
+    {
+      "nombre": "Calza Costa",
+      "categoria": "Calzas",
+      "precio": 24500,
+      "nuevo": true,
+      "visible": true,
+      "descripcion": "Calza larga tiro alto con bolsillo lateral para el celular.",
+      "talles": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "agotados": [],
+      "colores": [
+        {
+          "nombre": "Arena",
+          "hex": "#D8C4AC"
+        },
+        {
+          "nombre": "Bordó",
+          "hex": "#4D0E13"
+        }
+      ],
+      "fotos": [],
+      "medidas": ""
+    },
+    {
+      "nombre": "Top Brisa",
+      "categoria": "Tops",
+      "precio": 15000,
+      "nuevo": true,
+      "visible": true,
+      "descripcion": "Top de breteles cruzados con taza removible.",
+      "talles": [
+        "S",
+        "M",
+        "L"
+      ],
+      "agotados": [],
+      "colores": [
+        {
+          "nombre": "Rosa",
+          "hex": "#DF95AC"
+        },
+        {
+          "nombre": "Crema",
+          "hex": "#EEE4DA"
+        }
+      ],
+      "fotos": [],
+      "medidas": ""
+    },
+    {
+      "nombre": "Remera Ola",
+      "categoria": "Remeras",
+      "precio": 16500,
+      "nuevo": true,
+      "visible": true,
+      "descripcion": "Remera oversize de algodón con elastano.",
+      "talles": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "agotados": [],
+      "colores": [
+        {
+          "nombre": "Crema",
+          "hex": "#EEE4DA"
+        },
+        {
+          "nombre": "Rosa",
+          "hex": "#DF95AC"
+        }
+      ],
+      "fotos": [],
+      "medidas": ""
+    },
+    {
+      "nombre": "Campera Golfo",
+      "categoria": "Camperas",
+      "precio": 48000,
+      "nuevo": false,
+      "visible": true,
+      "descripcion": "Campera liviana con cierre y capucha, ideal para entrenar al aire libre con viento.",
+      "talles": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "agotados": [
+        "S"
+      ],
+      "colores": [
+        {
+          "nombre": "Bordó",
+          "hex": "#4D0E13"
+        }
+      ],
+      "fotos": [],
+      "medidas": ""
+    },
+    {
+      "nombre": "Biker Punta Loma",
+      "categoria": "Shorts",
+      "precio": 18000,
+      "nuevo": false,
+      "visible": true,
+      "descripcion": "Short ciclista tiro alto, cintura sin costura.",
+      "talles": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "agotados": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colores": [
+        {
+          "nombre": "Rosa empolvado",
+          "hex": "#C8A49F"
+        }
+      ],
+      "fotos": [],
+      "medidas": ""
+    }
+  ]
+}

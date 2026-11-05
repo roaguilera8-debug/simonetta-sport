@@ -1,0 +1,95 @@
+# ==========================================================
+#  PANEL DE SIMONETTA SPORT
+#  ÚNICO CAMBIO NECESARIO: en "repo", reemplazá TU-USUARIO
+#  por tu nombre de usuario de GitHub.
+# ==========================================================
+backend:
+  name: github
+  repo: TU-USUARIO/simonetta-sport
+  branch: main
+
+locale: es
+media_folder: fotos
+public_folder: fotos
+
+# Achica y optimiza las fotos al subirlas (para que la web cargue rápido)
+media_libraries:
+  default:
+    config:
+      transformations:
+        raster_image:
+          format: webp
+          quality: 85
+          width: 1600
+          height: 1600
+
+collections:
+  - name: catalogo
+    label: Catálogo
+    files:
+      - name: productos
+        label: Productos
+        file: datos/productos.json
+        format: json
+        fields:
+          - name: productos
+            label: Productos
+            label_singular: producto
+            widget: list
+            summary: "{{fields.nombre}} · {{fields.categoria}} · ${{fields.precio}}"
+            fields:
+              - { name: nombre, label: Nombre de la prenda, widget: string }
+              - name: categoria
+                label: Categoría
+                widget: select
+                options: [Conjuntos, Calzas, Tops, Remeras, Camperas, Shorts, Buzos, Accesorios]
+              - { name: precio, label: "Precio (solo números, sin $ ni puntos)", widget: number, value_type: int }
+              - { name: visible, label: "Mostrar en la web", widget: boolean, default: true, hint: "Apagalo para ocultar la prenda sin borrarla" }
+              - { name: nuevo, label: "Marcar como NUEVO", widget: boolean, default: false, hint: "Aparece en «Lo más nuevo» del inicio" }
+              - { name: descripcion, label: Descripción, widget: text, required: false }
+              - name: fotos
+                label: Fotos de la prenda
+                label_singular: foto
+                widget: list
+                required: false
+                hint: "La primera es la que se ve en el catálogo"
+                field: { name: foto, label: Foto, widget: image }
+              - { name: medidas, label: "Foto de la tabla de medidas", widget: image, required: false }
+              - name: talles
+                label: Talles disponibles
+                widget: select
+                multiple: true
+                options: [XS, S, M, L, XL, XXL, XXXL, Único]
+              - name: agotados
+                label: Talles SIN STOCK
+                widget: select
+                multiple: true
+                required: false
+                hint: "Se muestran tachados. Si marcás todos, la prenda aparece «Sin stock»"
+                options: [XS, S, M, L, XL, XXL, XXXL, Único]
+              - name: colores
+                label: Colores
+                label_singular: color
+                widget: list
+                required: false
+                summary: "{{fields.nombre}}"
+                fields:
+                  - { name: nombre, label: Nombre del color, widget: string }
+                  - { name: hex, label: Color, widget: color }
+
+  - name: tienda
+    label: Datos de la tienda
+    files:
+      - name: datos
+        label: Contacto y textos
+        file: datos/tienda.json
+        format: json
+        fields:
+          - { name: whatsapp, label: "WhatsApp (con 549 y sin espacios, ej: 5492804123456)", widget: string }
+          - { name: whatsappVisible, label: "WhatsApp como se muestra (ej: +54 9 280 412-3456)", widget: string }
+          - { name: instagram, label: "Usuario de Instagram (sin @)", widget: string }
+          - { name: coleccion, label: "Nombre de la colección (aparece en el inicio)", widget: string, required: false }
+          - { name: envios, label: "Texto: ¿Hacen envíos?", widget: text, required: false }
+          - { name: pagos, label: "Texto: Medios de pago", widget: text, required: false }
+          - { name: cambios, label: "Texto: Cambios", widget: text, required: false }
+          - { name: retiro, label: "Texto: Retiro en Puerto Madryn", widget: text, required: false }
