@@ -72,10 +72,9 @@ header{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--fondo
 .btn-1{background:var(--tinta);color:var(--fondo)}
 .btn-2{border:1.5px solid var(--tinta)}
 .btn-acento{background:var(--acento);color:var(--tinta)}
-.hero-img{aspect-ratio:4/5;border-radius:200px 200px 28px 28px;background:linear-gradient(160deg,var(--crema),var(--rosa));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.hero-img .sello{position:absolute;bottom:18px;left:18px;right:18px;background:var(--blanco);border-radius:14px;padding:14px 16px;font-size:.9rem;display:flex;justify-content:space-between;align-items:center}
-.hero-img .sello b{font-family:var(--display);font-size:.95rem}
-@media (max-width:860px){.hero{grid-template-columns:1fr;padding-top:34px}.hero-img{aspect-ratio:1/1;border-radius:160px 160px 24px 24px}.hero-img>img{width:44%!important;margin-bottom:60px}}
+.hero-img{display:flex;align-items:center;justify-content:center}
+.hero-img img{width:min(100%,460px);aspect-ratio:1;border-radius:50%;object-fit:cover;box-shadow:0 0 0 12px var(--crema),0 0 0 13px var(--rosa),0 24px 60px color-mix(in srgb,var(--tinta) 14%,transparent)}
+@media (max-width:860px){.hero{grid-template-columns:1fr;padding-top:34px}.hero-img{order:-1;padding:14px 0 6px}.hero-img img{width:min(56%,230px)}}
 
 .cinta{background:var(--tinta);color:var(--fondo);padding:16px 0;overflow:hidden;white-space:nowrap;margin:20px 0 60px}
 .cinta div{display:inline-block;animation:correr 28s linear infinite;font-family:var(--display);font-size:1.05rem;letter-spacing:.3em;text-transform:uppercase}
@@ -86,7 +85,7 @@ header{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--fondo
 .seccion-titulo h2{font-family:var(--display);font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:600}
 .seccion-titulo a{font-weight:700;color:var(--acento);text-decoration:none;white-space:nowrap}
 
-.cats-inicio{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:70px}
+.cats-inicio{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:80px}
 .cat-card{background:var(--suave);border-radius:var(--radio);padding:20px;aspect-ratio:1/1.05;display:flex;flex-direction:column;justify-content:space-between;text-align:left;transition:transform .2s}
 .cat-card:hover{transform:translateY(-4px)}
 .cat-card svg{width:58%;align-self:center;margin-top:8px}
@@ -105,7 +104,7 @@ header{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--fondo
 .chip.activo{background:var(--tinta);color:var(--fondo);border-color:var(--tinta)}
 .chip .n{opacity:.55;margin-left:4px;font-size:.85em}
 
-.grilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px 18px;padding-bottom:80px}
+.grilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px 18px;padding-bottom:60px}
 .prod{text-align:left;display:flex;flex-direction:column;gap:12px}
 .prod-img{aspect-ratio:3/4;border-radius:var(--radio);overflow:hidden;position:relative;background:var(--suave)}
 .prod-img img,.prod-img svg{width:100%;height:100%;object-fit:cover;transition:transform .5s}
@@ -124,7 +123,13 @@ header{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--fondo
 .ficha{background:var(--fondo);border-radius:26px;max-width:980px;width:100%;max-height:92vh;overflow:auto;display:grid;grid-template-columns:1fr 1fr;position:relative}
 .cerrar{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;background:var(--blanco);display:flex;align-items:center;justify-content:center;z-index:3;font-size:1.3rem}
 .galeria{padding:18px;display:flex;flex-direction:column;gap:10px}
-.galeria .principal{aspect-ratio:3/4;border-radius:var(--radio);overflow:hidden;background:var(--suave)}
+.galeria .principal{aspect-ratio:3/4;max-height:calc(92vh - 120px);width:100%;border-radius:var(--radio);overflow:hidden;background:var(--suave);position:relative;touch-action:pan-y}
+.flecha{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:color-mix(in srgb,var(--blanco) 88%,transparent);color:var(--tinta);font-size:1.3rem;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 10px rgba(0,0,0,.12);z-index:2}
+.flecha.izq{left:10px}.flecha.der{right:10px}
+.contador{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:2}
+.contador i{width:8px;height:8px;border-radius:50%;background:color-mix(in srgb,var(--blanco) 60%,transparent)}
+.contador i.on{background:var(--blanco);width:20px;border-radius:99px}
+@media (max-width:760px){.galeria .principal{max-height:58vh}}
 .galeria .principal img,.galeria .principal svg{width:100%;height:100%;object-fit:cover}
 .miniaturas{display:flex;gap:8px}
 .miniaturas button{width:64px;aspect-ratio:3/4;border-radius:10px;overflow:hidden;opacity:.55;border:2px solid transparent;background:var(--suave)}
@@ -213,7 +218,7 @@ footer{background:var(--tinta);color:var(--fondo);padding:50px 0 30px}
   <section class="vista" id="v-inicio">
     <div class="wrap hero">
       <div>
-        <span class="etiqueta">Puerto Madryn · Envíos a todo el país</span>
+        <span class="etiqueta">Ropa deportiva femenina · Envíos en Puerto Madryn</span>
         <h1>Moverte <em>cómoda</em>,<br>verte increíble.</h1>
         <p>Conjuntos, calzas y prendas deportivas pensadas para entrenar, caminar la costanera o vivirlas todo el día.</p>
         <div class="botones">
@@ -221,19 +226,17 @@ footer{background:var(--tinta);color:var(--fondo);padding:50px 0 30px}
           <a href="#como-comprar" class="btn btn-2">Cómo comprar</a>
         </div>
       </div>
-      <div class="hero-img" id="hero-img">
-        <div class="sello"><span>Nueva colección</span><b id="coleccion">Primavera–Verano</b></div>
-      </div>
+      <div class="hero-img"><img src="logo-circular.jpg" alt="Simonetta Sport"></div>
     </div>
 
     <div class="cinta"><div id="cinta-txt"></div></div>
 
     <div class="wrap">
-      <div class="seccion-titulo"><h2>Comprá por categoría</h2><a href="#catalogo">Ver todo →</a></div>
-      <div class="cats-inicio" id="cats-inicio"></div>
-
       <div class="seccion-titulo"><h2>Lo más nuevo</h2><a href="#catalogo">Ver catálogo →</a></div>
       <div class="grilla" id="destacados"></div>
+
+      <div class="seccion-titulo"><h2>Comprá por categoría</h2><a href="#catalogo">Ver todo →</a></div>
+      <div class="cats-inicio" id="cats-inicio"></div>
     </div>
   </section>
 
@@ -373,10 +376,8 @@ function tarjeta(p){
 }
 
 function pintarInicio(){
-  $("#hero-img").insertAdjacentHTML("afterbegin", `<img src="logo.png" alt="Simonetta Sport" style="width:58%">`);
-  if (TIENDA.coleccion) $("#coleccion").textContent = TIENDA.coleccion;
-  const frase = [...CATEGORIAS.map(c=>c.nombre), "Envíos a todo el país", "Puerto Madryn"];
-  $("#cinta-txt").innerHTML = [...frase,...frase,...frase].map(t=>`${esc(t)}<span>✦</span>`).join("");
+  const frase = ["Ropa Deportiva Femenina", "Puerto Madryn"];
+  $("#cinta-txt").innerHTML = [...frase,...frase,...frase,...frase,...frase,...frase].map(t=>`${esc(t)}<span>✦</span>`).join("");
   $("#cats-inicio").innerHTML = CATEGORIAS.slice(0,4).map(c=>{
     const n = PRODUCTOS.filter(p=>p.categoria===c.id).length;
     return `<button class="cat-card" onclick="irACategoria('${c.id}')">
@@ -403,7 +404,8 @@ function irACategoria(id){ filtro=id; location.hash="catalogo"; }
 let sel = {};
 function abrirProducto(id){
   const p = PRODUCTOS.find(x=>x.id===id);
-  sel = { p, talle:null, color:0, foto:0 };
+  const disponibles = p.talles.map((t,i)=>i).filter(i=>!p.agotados.includes(p.talles[i]));
+  sel = { p, talle: disponibles.length===1 ? disponibles[0] : null, color:0, foto:0 };
   pintarFicha();
   $("#modal").classList.add("abierto");
   document.body.style.overflow="hidden";
@@ -420,7 +422,11 @@ function pintarFicha(){
   $("#ficha").innerHTML = `
     <button class="cerrar" onclick="cerrarModal()" aria-label="Cerrar">✕</button>
     <div class="galeria">
-      <div class="principal">${imagen(p, sel.foto)}</div>
+      <div class="principal" id="principal">${imagen(p, sel.foto)}
+        ${nFotos>1?`<button class="flecha izq" aria-label="Foto anterior" onclick="cambiarFoto(-1)">‹</button>
+        <button class="flecha der" aria-label="Foto siguiente" onclick="cambiarFoto(1)">›</button>
+        <div class="contador">${Array.from({length:nFotos},(_,i)=>`<i class="${i===sel.foto?"on":""}"></i>`).join("")}</div>`:""}
+      </div>
       ${nFotos>1?`<div class="miniaturas">${Array.from({length:nFotos},(_,i)=>`<button class="${i===sel.foto?"activo":""}" onclick="sel.foto=${i};pintarFicha()">${imagen(p,i)}</button>`).join("")}</div>`:""}
     </div>
     <div class="info">
@@ -439,7 +445,12 @@ function pintarFicha(){
         : `<a class="btn btn-acento comprar" aria-disabled="${!talleOk}" target="_blank" rel="noopener" href="${wa}?text=${msg}">${talleOk?"Pedir por WhatsApp":"Elegí un talle"}</a>`}
       <p class="nota">Se abre WhatsApp con tu pedido armado.</p>
     </div>`;
+  sel.n = nFotos;
+  const pr = $("#principal"); let x0 = null;
+  pr.addEventListener("touchstart", e => { x0 = e.touches[0].clientX; }, {passive:true});
+  pr.addEventListener("touchend", e => { if (x0===null) return; const dx = e.changedTouches[0].clientX - x0; x0 = null; if (Math.abs(dx) > 40) cambiarFoto(dx < 0 ? 1 : -1); });
 }
+function cambiarFoto(d){ if (!sel.n || sel.n < 2) return; sel.foto = (sel.foto + d + sel.n) % sel.n; pintarFicha(); }
 function verMedidas(){
   const p = sel.p;
   $("#ficha-medidas").innerHTML = `<button class="cerrar" onclick="$('#modal-medidas').classList.remove('abierto')">✕</button>
@@ -458,7 +469,7 @@ function mostrar(){
   cerrarModal(); $("#modal-medidas").classList.remove("abierto");
   window.scrollTo(0,0);
 }
-document.addEventListener("keydown", e=>{ if(e.key==="Escape"){ cerrarModal(); $("#modal-medidas").classList.remove("abierto"); }});
+document.addEventListener("keydown", e=>{ if($("#modal").classList.contains("abierto")){ if(e.key==="ArrowRight") cambiarFoto(1); if(e.key==="ArrowLeft") cambiarFoto(-1); } if(e.key==="Escape"){ cerrarModal(); $("#modal-medidas").classList.remove("abierto"); }});
 window.addEventListener("hashchange", mostrar);
 
 function pintarContacto(){
