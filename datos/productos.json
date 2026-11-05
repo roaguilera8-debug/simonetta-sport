@@ -1,17 +1,21 @@
 {
   "productos": [
     {
-      "nombre": "Conjunto Nube",
+      "nombre": "Conjunto Kiara",
       "categoria": "Conjuntos",
-      "precio": 42000,
-      "nuevo": true,
+      "precio": 60000,
       "visible": true,
-      "descripcion": "Top deportivo con soporte medio y calza tiro alto. Tela suplex con lycra, no transparenta.",
+      "nuevo": true,
+      "descripcion": "Conjunto deportivo con top y calza tiro alto. Tela suplex con lycra, no transparenta.",
+      "fotos": [
+        "/fotos/WhatsApp Image 2026-11-05 at 12.39.45.webp",
+        "/fotos/WhatsApp Image 2026-11-05 at 12.34.43.webp"
+      ],
+      "medidas": "",
       "talles": [
         "S",
         "M",
-        "L",
-        "XL"
+        "L"
       ],
       "agotados": [
         "XL"
@@ -20,22 +24,18 @@
         {
           "nombre": "Rosa empolvado",
           "hex": "#C8A49F"
-        },
-        {
-          "nombre": "Bordó",
-          "hex": "#4D0E13"
         }
-      ],
-      "fotos": [],
-      "medidas": ""
+      ]
     },
     {
       "nombre": "Calza Costa",
       "categoria": "Calzas",
       "precio": 24500,
-      "nuevo": true,
       "visible": true,
-      "descripcion": "Calza larga tiro alto con bolsillo lateral para el celular.",
+      "nuevo": true,
+      "descripcion": "Calza larga tiro alto",
+      "fotos": [],
+      "medidas": "",
       "talles": [
         "S",
         "M",
@@ -53,17 +53,17 @@
           "nombre": "Bordó",
           "hex": "#4D0E13"
         }
-      ],
-      "fotos": [],
-      "medidas": ""
+      ]
     },
     {
       "nombre": "Top Brisa",
       "categoria": "Tops",
       "precio": 15000,
-      "nuevo": true,
       "visible": true,
+      "nuevo": true,
       "descripcion": "Top de breteles cruzados con taza removible.",
+      "fotos": [],
+      "medidas": "",
       "talles": [
         "S",
         "M",
@@ -79,17 +79,17 @@
           "nombre": "Crema",
           "hex": "#EEE4DA"
         }
-      ],
-      "fotos": [],
-      "medidas": ""
+      ]
     },
     {
       "nombre": "Remera Ola",
       "categoria": "Remeras",
       "precio": 16500,
-      "nuevo": true,
       "visible": true,
+      "nuevo": true,
       "descripcion": "Remera oversize de algodón con elastano.",
+      "fotos": [],
+      "medidas": "",
       "talles": [
         "S",
         "M",
@@ -106,17 +106,17 @@
           "nombre": "Rosa",
           "hex": "#DF95AC"
         }
-      ],
-      "fotos": [],
-      "medidas": ""
+      ]
     },
     {
       "nombre": "Campera Golfo",
       "categoria": "Camperas",
       "precio": 48000,
-      "nuevo": false,
       "visible": true,
+      "nuevo": false,
       "descripcion": "Campera liviana con cierre y capucha, ideal para entrenar al aire libre con viento.",
+      "fotos": [],
+      "medidas": "",
       "talles": [
         "S",
         "M",
@@ -131,17 +131,17 @@
           "nombre": "Bordó",
           "hex": "#4D0E13"
         }
-      ],
-      "fotos": [],
-      "medidas": ""
+      ]
     },
     {
       "nombre": "Biker Punta Loma",
       "categoria": "Shorts",
       "precio": 18000,
-      "nuevo": false,
       "visible": true,
+      "nuevo": false,
       "descripcion": "Short ciclista tiro alto, cintura sin costura.",
+      "fotos": [],
+      "medidas": "",
       "talles": [
         "S",
         "M",
@@ -159,9 +159,7 @@
           "nombre": "Rosa empolvado",
           "hex": "#C8A49F"
         }
-      ],
-      "fotos": [],
-      "medidas": ""
+      ]
     }
   ]
 }
