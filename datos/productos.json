@@ -84,6 +84,33 @@
           "hex": "#2a0900"
         }
       ]
+    },
+    {
+      "nombre": "Top Rocio",
+      "categoria": "Tops",
+      "precio": 47000,
+      "visible": true,
+      "nuevo": false,
+      "descripcion": "Top deportivo armado",
+      "fotos": [
+        "/fotos/IMG_5941.webp",
+        "/fotos/IMG_5942.webp"
+      ],
+      "medidas": "",
+      "talles": [
+        "S"
+      ],
+      "agotados": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colores": [
+        {
+          "nombre": "Rojo",
+          "hex": "#8d0000"
+        }
+      ]
     }
   ]
 }
