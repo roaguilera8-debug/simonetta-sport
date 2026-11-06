@@ -50,7 +50,12 @@
         "L",
         "XL"
       ],
-      "colores": []
+      "colores": [
+        {
+          "nombre": "Bordo",
+          "hex": "#6c0001"
+        }
+      ]
     }
   ]
 }
