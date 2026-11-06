@@ -28,6 +28,29 @@
           "hex": "#f2e3e3"
         }
       ]
+    },
+    {
+      "nombre": "Conjunto Merlot",
+      "categoria": "Conjuntos",
+      "precio": 80000,
+      "visible": true,
+      "nuevo": false,
+      "descripcion": "Conjunto deportivo con top y calza tiro alto. Tela suplex con lycra, no transparenta.",
+      "fotos": [
+        "/fotos/IMG_6015.webp",
+        "/fotos/IMG_6026.webp",
+        "/fotos/IMG_5897.webp"
+      ],
+      "medidas": "/fotos/IMG_6133.webp",
+      "talles": [
+        "M"
+      ],
+      "agotados": [
+        "S",
+        "L",
+        "XL"
+      ],
+      "colores": []
     }
   ]
 }
