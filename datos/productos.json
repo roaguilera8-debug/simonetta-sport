@@ -34,7 +34,7 @@
       "categoria": "Conjuntos",
       "precio": 80000,
       "visible": true,
-      "nuevo": false,
+      "nuevo": true,
       "descripcion": "Conjunto deportivo con top y calza tiro alto. Tela suplex con lycra, no transparenta.",
       "fotos": [
         "/fotos/IMG_6015.webp",
@@ -62,7 +62,7 @@
       "categoria": "Conjuntos",
       "precio": 80000,
       "visible": true,
-      "nuevo": false,
+      "nuevo": true,
       "descripcion": "Conjunto deportivo con top y calza tiro alto. Tela suplex con lycra, no transparenta.",
       "fotos": [
         "/fotos/IMG_6091.webp",
@@ -90,7 +90,7 @@
       "categoria": "Tops",
       "precio": 47000,
       "visible": true,
-      "nuevo": false,
+      "nuevo": true,
       "descripcion": "Top deportivo armado",
       "fotos": [
         "/fotos/IMG_5941.webp",
