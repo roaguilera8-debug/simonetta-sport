@@ -56,6 +56,34 @@
           "hex": "#6c0001"
         }
       ]
+    },
+    {
+      "nombre": "Conjunto Chocolate",
+      "categoria": "Conjuntos",
+      "precio": 80000,
+      "visible": true,
+      "nuevo": false,
+      "descripcion": "Conjunto deportivo con top y calza tiro alto. Tela suplex con lycra, no transparenta.",
+      "fotos": [
+        "/fotos/IMG_6091.webp",
+        "/fotos/IMG_5910.webp",
+        "/fotos/IMG_5912.webp"
+      ],
+      "medidas": "/fotos/IMG_6133.webp",
+      "talles": [
+        "S"
+      ],
+      "agotados": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colores": [
+        {
+          "nombre": "Marrón cafe",
+          "hex": "#2a0900"
+        }
+      ]
     }
   ]
 }
