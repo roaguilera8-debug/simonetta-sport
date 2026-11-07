@@ -3,7 +3,7 @@
     {
       "nombre": "Conjunto Antonietta",
       "categoria": "Conjuntos",
-      "precio": 80000,
+      "precio": 52000,
       "visible": true,
       "nuevo": true,
       "descripcion": "Conjunto deportivo con top y calza tiro alto. Tela suplex con lycra, no transparenta.",
@@ -32,7 +32,7 @@
     {
       "nombre": "Conjunto Merlot",
       "categoria": "Conjuntos",
-      "precio": 80000,
+      "precio": 520000,
       "visible": true,
       "nuevo": true,
       "descripcion": "Conjunto deportivo con top y calza tiro alto. Tela suplex con lycra, no transparenta.",
@@ -60,7 +60,7 @@
     {
       "nombre": "Conjunto Chocolate",
       "categoria": "Conjuntos",
-      "precio": 80000,
+      "precio": 52000,
       "visible": true,
       "nuevo": true,
       "descripcion": "Conjunto deportivo con top y calza tiro alto. Tela suplex con lycra, no transparenta.",
@@ -88,7 +88,7 @@
     {
       "nombre": "Top Rocio",
       "categoria": "Tops",
-      "precio": 47000,
+      "precio": 35000,
       "visible": true,
       "nuevo": true,
       "descripcion": "Top deportivo armado",
